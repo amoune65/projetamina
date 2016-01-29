@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visual recognition Analysis </title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<div class='full'>
+    <b>Visual Recognition Analysis </b>
+    <ul>
+      <% analysis.forEach(function(result, index) { %>
+        <li>
+          <b> <%= result.name %> : <%= result.score * 100 %> % </b>
+        </li>
+        <% }); %>
+    </ul>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Book List - Paris Dauphine 2015 - Emerging Technologies </title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1>Library Book list - Book details <a class='action' href='/book'>back</a></h1>
+</div>
+
+<h2> <%= booklist.authorname %></h2><a class='action' href="/book/personality_insights/<%= booklist._id %>">Personality Insights</a>
+<%= booklist.authorbio %>
+<blockquote><%= booklist.authorquote %>    </blockquote>
+
+<h3><%= booklist.booktitle %> </h3>
+<b>Publication Date :</b> <%= booklist.bookpubdate %>
+<div>  <%= booklist.booksummary %></div>
+<a class='action' href="/book/translation/<%= booklist._id %>">Translate to French</a>
+<br/>
+
+
+</body>
+</html>
